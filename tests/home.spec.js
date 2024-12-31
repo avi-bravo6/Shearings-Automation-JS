@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { isVisible, isClickable } = require('../utils/ElementUtils'); // Import utility functions
 
-test('Check visibility and clickability of Brochure Request Link', async ({ page }) => {
+test('Check Brochure Request button', async ({ page }) => {
   const brochureRequestXPath = '//*[@id="top"]/div[1]/div/ul/li[1]/a'; // XPath of Brochure Request button
 
   // Step 1: Open the homepage
