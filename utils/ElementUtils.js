@@ -16,4 +16,14 @@ async function isVisible(page, xpath) {
   }
   
   module.exports = { isVisible, isClickable };
+
+  async function checkElementStatus(page, xpath) {
+    const isVisible = await page.isVisible(xpath);
+    const isEnabled = await page.isEnabled(xpath);
+    console.log(`Is the element visible? ${isVisible}`);
+    console.log(`Is the element enabled? ${isEnabled}`);
+    return { isVisible, isEnabled };
+  }
+  
+  module.exports = { checkElementStatus };
   
