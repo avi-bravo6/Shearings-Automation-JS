@@ -26,4 +26,11 @@ async function isVisible(page, xpath) {
   }
   
   module.exports = { checkElementStatus };
-  
+
+// Function to get text and print
+async function getTextAndPrint(page, xpath) {
+  const text = await page.locator(`xpath=${xpath}`).innerText();
+  console.log(`Text for XPath ${xpath}: ${text}`);
+}
+
+module.exports = { getTextAndPrint };
