@@ -34,3 +34,10 @@ async function getTextAndPrint(page, xpath) {
 }
 
 module.exports = { getTextAndPrint };
+
+// Function to scroll to an element and click it
+async function scrollTo(page, xpath) {
+  await page.locator(`xpath=${xpath}`).scrollIntoViewIfNeeded();
+}
+
+module.exports = { scrollTo };

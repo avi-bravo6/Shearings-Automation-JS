@@ -7,6 +7,7 @@ const HomePage = require('../pages/HomePage'); // Ensure the correct path
 const ElementUtils = require('../utils/ElementUtils'); // Ensure the correct path
 
 test('Test Brochure Request', async ({ page }) => {
+    
     // Instantiate the HomePage class
     const homePage = new HomePage(page);
 
@@ -18,14 +19,16 @@ test('Test Brochure Request', async ({ page }) => {
     await page.locator(BrochureRequestXPath).click();
     console.log('Clicked on the Brochure Request button');
 
+    // Click on close button
+    // const closeButton = '//*[@id="om-mv3crt1ouu2cysd991o5-optin"]/div/button/svg/path';
+    // if (await ElementUtils.isVisible(page, closeButton)) {
+    //     await page.locator(closeButton).click();
+    //     console.log('Clicked on close button');
+    // }
+
     // Verify the navigation to the brochure request page
     await expect(page).toHaveURL(/brochurerequest/);
     console.log('Navigated to brochure request page');
-
-    // Scroll doiwn the page
-    const formXpath = '//*[@id="brochureRequest"]/div/form/div/div[2]/h4';
-    await ElementUtils.scrollToElement(page, formXpath);
-    console.log('Scrolled down the page');
 
     // Select brochures
     const brochures = [
