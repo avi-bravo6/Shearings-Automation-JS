@@ -15,7 +15,6 @@ async function isVisible(page, xpath) {
     const visible = await element.isVisible();
     return visible;
 }
-module.exports = { isVisible };
 
 // Function to check if an element is enabled
 async function isEnabled(page, xpath) {
@@ -46,6 +45,20 @@ async function fillInput(page, xpath, text) {
     await element.fill(text);
 }
 
+// Function to get text from an element
+async function getText(page, xpath) {
+    const element = page.locator(xpath);
+    const text = await element.innerText(); 
+    return text.trim();
+}
+
+// Function to get text and compare
+async function getTextAndCompare(page, xpath, expectedText) {
+    const text = await page.locator(`xpath=${xpath}`).innerText();
+    return text.trim() === expectedText;
+}
+
+
 // Export everything
 module.exports = {
     HomePage,
@@ -55,4 +68,6 @@ module.exports = {
     scrollTo,
     urlContains,
     fillInput,
+    getText,
+    getTextAndCompare
 };

@@ -3,8 +3,7 @@ Date: 02/01/2025
 Created by: Avi */
 
 const { test, expect } = require('@playwright/test');
-const HomePage = require('../pages/HomePage'); // Ensure the correct path
-const ElementUtils = require('../utils/ElementUtils'); // Ensure the correct path
+const { HomePage, isVisible, urlContains, getText } = require('../pages/Helper_Functions.js');
 
 test('Test Brochure Request', async ({ page }) => {
     
