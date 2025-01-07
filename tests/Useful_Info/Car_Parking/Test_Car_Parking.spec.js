@@ -3,7 +3,7 @@ Date: 06/01/2025
 Created by: Avi */
 
 const { test, expect } = require('@playwright/test');
-const { HomePage, isVisible, urlContains, getText, getTextAndCompare } = require('../../pages/Helper_Functions.js');
+const { HomePage, isVisible, urlContains, getText, getTextAndCompare } = require('../../../pages/Helper_Functions.js');
 
 test('Test Car Parking', async ({ page }) => {
 

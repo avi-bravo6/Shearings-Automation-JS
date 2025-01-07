@@ -58,6 +58,22 @@ async function getTextAndCompare(page, xpath, expectedText) {
     return text.trim() === expectedText;
 }
 
+// Function to enter data in field
+const inputDataInField = async (page, xpath, data) => {
+    const inputField = await page.locator(xpath);
+
+    // Wait for the element to be visible before interacting with it
+    await inputField.waitFor({ state: 'visible', timeout: 5000 });
+
+    // Fill the input field with the given data
+    await inputField.fill(data);  
+    console.log(`Entered data in field with XPath: ${xpath}`);
+};
+
+// Function to navigate to a page
+const NavigateToUsefulInfo = async (page, xpath, data) => {
+    
+}
 
 // Export everything
 module.exports = {
@@ -69,5 +85,6 @@ module.exports = {
     urlContains,
     fillInput,
     getText,
-    getTextAndCompare
+    getTextAndCompare,
+    inputDataInField,
 };
