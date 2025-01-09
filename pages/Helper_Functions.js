@@ -70,11 +70,6 @@ const inputDataInField = async (page, xpath, data) => {
     console.log(`Entered data in field with XPath: ${xpath}`);
 };
 
-// Function to navigate to a page
-const NavigateToUsefulInfo = async (page, xpath, data) => {
-    
-}
-
 // Export everything
 module.exports = {
     HomePage,
