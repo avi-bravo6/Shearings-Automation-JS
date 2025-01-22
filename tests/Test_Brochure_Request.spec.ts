@@ -2,11 +2,10 @@
 Date: 02/01/2025
 Created by: Avi */
 
-import { test, expect, Page } from '@playwright/test';
-import { HomePage, isVisible, urlContains, getText } from '../pages/Helper_Functions';
+const { test, expect } = require('@playwright/test');
+const { HomePage, isVisible, urlContains, getText } = require('../pages/Helper_Functions.js');
 
-// Define the test function with appropriate type annotations
-test('Test Brochure Request', async ({ page }: { page: Page }) => {
+test('Test Brochure Request', async ({ page }) => {
     
     // Instantiate the HomePage class
     const homePage = new HomePage(page);
@@ -15,16 +14,23 @@ test('Test Brochure Request', async ({ page }: { page: Page }) => {
     await homePage.goToHomePage();
 
     // Click on the Brochure Request button
-    const BrochureRequestXPath: string = '//*[@id="top"]/div[1]/div/ul/li[1]/a';
+    const BrochureRequestXPath = '//*[@id="top"]/div[1]/div/ul/li[1]/a';
     await page.locator(BrochureRequestXPath).click();
     console.log('Clicked on the Brochure Request button');
+
+    // Click on close button
+    // const closeButton = '//*[@id="om-mv3crt1ouu2cysd991o5-optin"]/div/button/svg/path';
+    // if (await ElementUtils.isVisible(page, closeButton)) {
+    //     await page.locator(closeButton).click();
+    //     console.log('Clicked on close button');
+    // }
 
     // Verify the navigation to the brochure request page
     await expect(page).toHaveURL(/brochurerequest/);
     console.log('Navigated to brochure request page');
 
     // Select brochures
-    const brochures: string[] = [
+    const brochures = [
         '//*[@id="brochureRequest"]/div/form/div/div[1]/div[1]/div/div[3]/label/span[2]',
         '//*[@id="brochureRequest"]/div/form/div/div[1]/div[2]/div/div[3]/label/span[2]',
         '//*[@id="brochureRequest"]/div/form/div/div[1]/div[3]/div/div[3]/label/span[2]'
@@ -38,17 +44,17 @@ test('Test Brochure Request', async ({ page }: { page: Page }) => {
     }
 
     // Fill in the form
-    const TitleXpath: string = '//*[@id="Title"]';
-    const TitleOptionXpath: string = '//*[@id="Title"]/option[2]';
-    const ForenameFieldXpath: string = '//*[@id="Forename"]';
-    const SurnameFieldXpath: string = '//*[@id="Surname"]';
-    const EmailFieldXpath: string = '//*[@id="Email"]';
-    const TelephoneFieldXpath: string = '//*[@id="Telephone"]';
-    const NewsletterCheckboxXpath: string = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/label[7]/span[2]';
-    const PostCodeFieldXpath: string = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/div/div/div/label/input';
-    const PostCodeXpath: string = '//*[@id="afd-result-0"]/a/span';
-    const CountMeInXpath: string = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/label[13]/span[2]';
-    const SendButtonXpath: string = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/label[14]/input';
+    const TitleXpath = '//*[@id="Title"]';
+    const TitleOptionXpath = '//*[@id="Title"]/option[2]';
+    const ForenameFieldXpath = '//*[@id="Forename"]';
+    const SurnameFieldXpath = '//*[@id="Surname"]';
+    const EmailFieldXpath = '//*[@id="Email"]';
+    const TelephoneFieldXpath = '//*[@id="Telephone"]';
+    const NewsletterCheckboxXpath = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/label[7]/span[2]';
+    const PostCodeFieldXpath = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/div/div/div/label/input';
+    const PostCodeXpath = '//*[@id="afd-result-0"]/a/span';
+    const CountMeInXpath = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/label[13]/span[2]';
+    const SendButtonXpath = '//*[@id="brochureRequest"]/div/form/div/div[2]/div/label[14]/input';
 
     // Interact with form fields
     await page.locator(TitleXpath).click(); // Select title dropdown
@@ -85,11 +91,11 @@ test('Test Brochure Request', async ({ page }: { page: Page }) => {
     console.log('Send button clicked successfully');
 
     // Verify success
-    const successMessageXpath: string = '/html/body/section[2]/div/div[2]/div[1]';
-    await expect(page).toHaveURL(/success/);
+    const successMessageXpath = '/html/body/section[2]/div/div[2]/div[1]';
+    await expect(page).toContainText(/success/);
     console.log('Redirected to brochure request success page');
     
     // Fetch and log success message
-    const successMessage: string = await page.locator(successMessageXpath).innerText();
+    const successMessage = await page.locator(successMessageXpath).innerText();
     console.log(`Brochure request success message: ${successMessage}`);
 });

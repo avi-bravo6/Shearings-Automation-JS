@@ -2,24 +2,24 @@
 Date: 06/01/2025
 Created by: Avi */
 
-import { test, expect, Page } from '@playwright/test';
-import { getTextAndCompare } from '../pages/Helper_Functions';
+const { test, expect } = require('@playwright/test');
+const { getTextAndCompare } = require('../pages/Helper_Functions');
 
-test('Test Search Functionality and Banners', async ({ page }:{page: Page}) => {
+test('Test Search Functionality and Banners', async ({ page }) => {
     // Step 1: Navigate to the Home Page
     await page.goto('https://www.shearings.com');
     console.log('Navigated to Home Page');
 
     // Step 2: Check if Search button is visible and click
-    const searchButton: string = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/button';
+    const searchButton = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/button';
     await expect(page.locator(searchButton)).toBeVisible();
     await page.locator(searchButton).click();
     console.log('Clicked on Search button');
 
     // Step 3: Verify visibility of banners
-    const banner1Xpath: string = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/div/div/div[3]/div[1]/div/a/div/div/h4';
-    const banner2Xpath: string = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/div/div/div[3]/div[2]/div/a/div/div/h4';
-    const banner3Xpath: string = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/div/div/div[3]/div[3]/div/a/div/div/h4';
+    const banner1Xpath = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/div/div/div[3]/div[1]/div/a/div/div/h4';
+    const banner2Xpath = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/div/div/div[3]/div[2]/div/a/div/div/h4';
+    const banner3Xpath = '//*[@id="top"]/div[6]/nav/div/ul/li[5]/div/div/div[3]/div[3]/div/a/div/div/h4';
 
     await expect(page.locator(banner1Xpath)).toBeVisible();
     console.log('We’ve had a makeover! banner is visible');
@@ -36,9 +36,9 @@ test('Test Search Functionality and Banners', async ({ page }:{page: Page}) => {
     await expect(page).toHaveURL(/why-we-rock/);
     console.log('Navigated to "Why We Rock" page successfully');
 
-    const banner1TitleXpath: string = '/html/body/section[2]/div/div[2]/div[1]/h1';
-    const banner1ExpectedText: string = 'A warm welcome from Shearings!';
-    const isBanner1TitleCorrect: boolean =  await getTextAndCompare(page, banner1TitleXpath, banner1ExpectedText);
+    const banner1TitleXpath = '/html/body/section[2]/div/div[2]/div[1]/h1';
+    const banner1ExpectedText = 'A warm welcome from Shearings!';
+    const isBanner1TitleCorrect = await getTextAndCompare(page, banner1TitleXpath, banner1ExpectedText);
     if (isBanner1TitleCorrect) {
         console.log('Banner 1 title verified successfully.');
     } else {
@@ -70,9 +70,9 @@ test('Test Search Functionality and Banners', async ({ page }:{page: Page}) => {
     await expect(page).toHaveURL(/deposits/);
     console.log('Navigated to "Deposits" page successfully');
 
-    const banner3TitleXpath: string = '/html/body/section[2]/div/div[2]/div/h1';
-    const banner3ExpectedText: string = 'Our dependable deposits';
-    const isBanner3TitleCorrect: boolean = await getTextAndCompare(page, banner3TitleXpath, banner3ExpectedText);
+    const banner3TitleXpath = '/html/body/section[2]/div/div[2]/div/h1';
+    const banner3ExpectedText = 'Our dependable deposits';
+    const isBanner3TitleCorrect = await getTextAndCompare(page, banner3TitleXpath, banner3ExpectedText);
     if (isBanner3TitleCorrect) {
         console.log('Banner 3 title verified successfully.');
     } else {
