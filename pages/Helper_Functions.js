@@ -40,11 +40,21 @@ async function urlContains(page, text) {
     return url.includes(text);
 }
 
-// Function to fill an input field
+// Function to fill an input field with error handling and proper waits
 async function fillInput(page, xpath, text) {
     const element = page.locator(`xpath=${xpath}`);
-    await element.fill(text);
+
+    try {
+        // Wait for the element to be visible and enabled
+        await element.waitFor({ state: 'visible', timeout: 10000 });
+        await element.fill(text); // Fill the input field
+        console.log(`Filled input field with text: ${text}`);
+    } catch (error) {
+        console.error(`Failed to fill input field with XPath: ${xpath}. Error: ${error.message}`);
+        throw error; // Rethrow the error to fail the test
+    }
 }
+
 
 // Function to get text from an element
 async function getText(page, xpath) {
@@ -71,6 +81,15 @@ const inputDataInField = async (page, xpath, data) => {
     console.log(`Entered data in field with XPath: ${xpath}`);
 };
 
+// Function to check vsisibility and click
+async function visibleAndClick(page, xpath) {
+    const element = page.locator(`xpath=${xpath}`);
+    const isVisible = await element.isVisible();
+    if (isVisible) {
+        await element.click();
+    }
+}
+
 // Export everything
 module.exports = {
     HomePage,
@@ -83,4 +102,5 @@ module.exports = {
     getText,
     getTextAndCompare,
     inputDataInField,
+    visibleAndClick
 };
