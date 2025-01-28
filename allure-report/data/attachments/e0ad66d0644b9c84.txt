@@ -1,0 +1,4 @@
+Navigated to Home Page
+Clicked on Destinations button
+Clicked on the given xpath
+Navigated to UK, URL verified

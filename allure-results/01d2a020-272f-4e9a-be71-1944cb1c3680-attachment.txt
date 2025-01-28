@@ -1,0 +1,2 @@
+Header element at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[1] does not exist.
+Header element at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[2] does not exist.

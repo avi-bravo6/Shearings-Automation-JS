@@ -1,0 +1,11 @@
+Navigated to Home Page
+Departing From modal visible
+Departing From option selected
+Departing month selected successfully
+Passenger entered successfully
+Search button clicked
+Search result page header verified
+Holiday card 1 verified
+Holiday card 2 verified
+Holiday card 3 verified
+Holiday card 4 verified

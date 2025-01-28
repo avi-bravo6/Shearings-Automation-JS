@@ -1,0 +1,17 @@
+Homepage opened
+Logo is visible and clickable
+Home Page Button is visible and clickable
+Button 1 is visible and clickable
+Button 2 missing
+Button 3 is visible and clickable
+Button 4 is visible and clickable
+Page 2 is visible and clickable
+Page 3 is visible and clickable
+Page 4 is visible and clickable
+Page 5 is visible and clickable
+Search Tab 1 is visible and clickable
+Search Tab 2 is visible and clickable
+Search Tab 3 is visible and clickable
+Does /html/body/section[1]/div[6]/div contain an image? false
+Hassle-Free Promise Banner not visible
+"Craving a getaway?" section verified

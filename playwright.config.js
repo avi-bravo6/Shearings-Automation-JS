@@ -1,9 +1,5 @@
-// const config = {
-//   reporter: [['html', { outputFolder: 'playwright-report' }]]
-// };
-// module.exports = config;
+import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  // ...
-  reporter: [['list'], ['allure-playwright']],
+  reporter: [['allure-playwright']],  // Ensure the allure-playwright reporter is set up here
 });

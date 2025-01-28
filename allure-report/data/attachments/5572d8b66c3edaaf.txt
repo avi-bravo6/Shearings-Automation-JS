@@ -1,0 +1,27 @@
+Navigated to Home Page
+Clicked on Destinations button
+Destinations title verified
+UK heading verified
+List item 1 verified
+List item 2 verified
+List item 3 verified
+List item 4 verified
+List item 5 verified
+Europe heading verified
+List item 1 verified
+List item 2 verified
+List item 3 verified
+List item 4 verified
+List item 5 verified
+List item 6 verified
+List item 7 verified
+List item 8 verified
+List item 9 verified
+List item 10 verified
+List item 11 verified
+List item 12 verified
+Banner 1 verified
+Banner 2 verified
+Banner 3 verified
+Clicked on Close button
+Verified Destinations panel elements successfully

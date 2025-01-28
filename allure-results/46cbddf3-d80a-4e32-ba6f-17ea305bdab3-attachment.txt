@@ -1,0 +1,6 @@
+Navigated to Home Page
+Departing From modal visible
+Departing From option selected
+Departing month selected successfully
+Passenger entered successfully
+Search button clicked

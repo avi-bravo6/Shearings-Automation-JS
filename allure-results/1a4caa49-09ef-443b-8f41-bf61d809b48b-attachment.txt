@@ -1,0 +1,18 @@
+Navigated to Home Page
+Clicked on Destinations button
+Clicked on the given xpath
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[1] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[2] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[3] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[4] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[5] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[6] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[7] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[8] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[9] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[10] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[11] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[12] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[13] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[14] is visible
+Element at //*[@id="destinations"]/section/div/div/div[2]/div/div[15] is visible

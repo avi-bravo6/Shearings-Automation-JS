@@ -1,0 +1,6 @@
+Navigated to Coach Holiday page
+Filled input field with text: London Victoria
+Value entered successfully in Departing From field.
+Departing month selected successfully
+Passenger entered successfully
+Search button clicked

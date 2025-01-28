@@ -1,0 +1,10 @@
+Navigated to Home Page
+Clicked on Search button
+We’ve had a makeover! banner is visible
+Fancy a FREE brochure? banner is visible
+Bag your holiday from little banner is visible
+Clicked Banner 1
+Navigated to "Why We Rock" page successfully
+Clicked Banner 3
+Navigated to "Deposits" page successfully
+Banner 3 title verified successfully.

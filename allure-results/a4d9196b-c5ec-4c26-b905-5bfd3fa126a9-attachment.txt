@@ -1,0 +1,21 @@
+Navigated to Home Page
+Clicked on Destinations button
+Clicked on the given xpath
+URL and title verified.
+Content description verified successfully.
+Header at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[1] is visible
+Header at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[2] is visible
+Header at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[3] is visible
+Header at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[4] is visible
+Header at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[5] is visible
+Header at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1]/div/div[6] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[1] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[2] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[3] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[4] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[5] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[6] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[7] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[8] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[9] is visible
+Holiday card at //*[@id="tour-search-results"]/div/section/div[8]/div/div[10] is visible

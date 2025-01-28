@@ -1,0 +1,5 @@
+Navigated to Shearings homepage
+Clicked on Search button
+Entered text "London" into Search field
+Clicked on the first search result
+Verified the URL contains "londons-royal-palaces"

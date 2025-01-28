@@ -1,0 +1,11 @@
+Navigated to Coach Holiday page
+Filled input field with text: London Victoria
+Value entered successfully in Departing From field.
+Departing month selected successfully
+Passenger entered successfully
+Search button clicked
+Search result page header verified
+Holiday card 1 verified
+Holiday card 2 verified
+Holiday card 3 verified
+Holiday card 4 verified
