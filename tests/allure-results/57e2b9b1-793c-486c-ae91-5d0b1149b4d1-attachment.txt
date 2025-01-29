@@ -1,0 +1,5 @@
+Navigated to Home Page
+Getaway banner is visible
+Clicked on Take a look button
+URL verified successfully: Navigated to Getaway page
+Page title verified successfully: Last minute holidays

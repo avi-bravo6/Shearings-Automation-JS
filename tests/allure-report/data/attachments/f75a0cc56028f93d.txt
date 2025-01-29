@@ -1,0 +1,23 @@
+Navigated to Home Page
+Clicked on Useful Info button
+Clicked on Car Parking button
+Navigated to correct Car Parking page
+Table is visible on the page
+Table has 16 rows
+Validating row 1
+Validating row 2
+Validating row 3
+Validating row 4
+Validating row 5
+Validating row 6
+Validating row 7
+Validating row 8
+Validating row 9
+Validating row 10
+Validating row 11
+Validating row 12
+Validating row 13
+Validating row 14
+Validating row 15
+Validating row 16
+Table content verified successfully

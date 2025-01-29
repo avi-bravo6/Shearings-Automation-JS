@@ -1,0 +1,8 @@
+Navigated to Shearings homepage
+Navigated to Home Page
+Agent Login button is visible
+Clicked on Agent Login button
+Navigated to Travel Agent Login page successfully
+First Name field is not visible
+ABTA Code field is not visible
+Password field is not visible

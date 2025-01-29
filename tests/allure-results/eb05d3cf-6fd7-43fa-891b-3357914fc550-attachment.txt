@@ -1,0 +1,6 @@
+Navigated to Home Page
+Clicked on Useful Info button
+Clicked on given xpath
+Navigated to Deposits page
+Table is visible on the page
+Table has 9 rows

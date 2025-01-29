@@ -1,0 +1,28 @@
+Navigated to Home Page
+Clicked on Useful Info button
+Clicked on given xpath
+Navigated to Our Awards page
+Page title verified successfully.
+Award 1 verified
+Award 2 verified
+Award 3 verified
+Award 4 verified
+Award 5 verified
+Award 6 verified
+Award 7 verified
+Award 8 verified
+Award 9 verified
+Award 10 verified
+Award 11 verified
+Award 12 verified
+Award 13 verified
+Award 14 verified
+Award 15 verified
+Award 16 verified
+Award 17 verified
+Award 18 verified
+Award 19 verified
+Award 20 verified
+Award 21 verified
+Award 22 verified
+Award 23 verified

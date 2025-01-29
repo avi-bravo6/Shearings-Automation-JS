@@ -1,0 +1,9 @@
+✅ Navigated to Home Page
+✅ Departing From option selected
+✅ Passengers selected
+✅ Search button clicked
+✅ Search results page verified
+✅ Holiday card 1 verified
+✅ Holiday card 2 verified
+✅ Holiday card 3 verified
+✅ Holiday card 4 verified

@@ -1,0 +1,4 @@
+Navigated to Home Page
+Clicked on Useful Info button
+Clicked on given xpath
+Navigated to incorrect page

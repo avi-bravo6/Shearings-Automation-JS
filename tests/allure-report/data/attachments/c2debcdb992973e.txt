@@ -1,0 +1,6 @@
+Navigated to Shearings homepage
+Navigated to Home Page
+Clicked on My Booking button
+User is redirected to My Booking page successfully and the required elements are visible.
+Clicked Switch to Travel Agent Login button successfully
+User is redirected to Agent Login Page successfully and the required elements are visible.

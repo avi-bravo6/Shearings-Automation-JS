@@ -1,0 +1,93 @@
+❌ Failed to navigate to River Cruises section: TypeError: Navigate_To_River_Cruises is not a function
+    at D:\My Projects\Shearings-Automation-JS\tests\Search\H025_River_Cruises.spec.js:26:19
+    at D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\common\testType.js:251:26
+    at raceAgainstDeadline (D:\My Projects\Shearings-Automation-JS\node_modules\playwright-core\lib\utils\timeoutRunner.js:27:24)
+    at D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\common\testType.js:249:55
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)
+    at Zone.run (D:\My Projects\Shearings-Automation-JS\node_modules\playwright-core\lib\utils\zones.js:62:36)
+    at ZoneManager.run (D:\My Projects\Shearings-Automation-JS\node_modules\playwright-core\lib\utils\zones.js:30:44)
+    at TestTypeImpl.step [as _step] (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\common\testType.js:246:31)
+    at D:\My Projects\Shearings-Automation-JS\tests\Search\H025_River_Cruises.spec.js:24:16
+    at D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\workerMain.js:341:9
+    at D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\testInfo.js:294:11
+    at TimeoutManager.withRunnable (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\timeoutManager.js:64:14)
+    at TestInfoImpl._runAsStage (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\testInfo.js:292:7)
+    at D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\workerMain.js:333:7
+    at D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\testInfo.js:294:11
+    at TimeoutManager.withRunnable (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\timeoutManager.js:52:27)
+    at TestInfoImpl._runAsStage (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\testInfo.js:292:7)
+    at WorkerMain._runTest (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\workerMain.js:283:5)
+    at WorkerMain.runTestGroup (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\worker\workerMain.js:207:11)
+    at process.<anonymous> (D:\My Projects\Shearings-Automation-JS\node_modules\playwright\lib\common\process.js:95:22)
+❌ Failed to click Search Button or verify results: ExpectError: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('.search-results')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('.search-results')
+
+    at D:\My Projects\Shearings-Automation-JS\tests\Search\H025_River_Cruises.spec.js:58:35
+    at D:\My Projects\Shearings-Automation-JS\tests\Search\H025_River_Cruises.spec.js:54:5 {
+  matcherResult: {
+    message: '\x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+      '\n' +
+      "Locator: locator('.search-results')\n" +
+      'Expected: visible\n' +
+      'Received: <element(s) not found>\n' +
+      'Call log:\n' +
+      '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+      "\x1B[2m  - waiting for locator('.search-results')\x1B[22m\n",
+    pass: false,
+    actual: '<element(s) not found>',
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      '  - expect.toBeVisible with timeout 5000ms',
+      "  - waiting for locator('.search-results')"
+    ],
+    timeout: 5000
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@31',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: undefined,
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'D:\\My Projects\\Shearings-Automation-JS\\tests\\Search\\H025_River_Cruises.spec.js',
+      line: 58,
+      column: 35,
+      function: undefined
+    },
+    steps: [],
+    attachmentIndices: [],
+    complete: [Function: complete],
+    endWallTime: 1738149771213,
+    error: {
+      message: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        "Locator: locator('.search-results')\n" +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        "\x1B[2m  - waiting for locator('.search-results')\x1B[22m\n",
+      stack: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        "Locator: locator('.search-results')\n" +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        "\x1B[2m  - waiting for locator('.search-results')\x1B[22m\n" +
+        '\n' +
+        '    at D:\\My Projects\\Shearings-Automation-JS\\tests\\Search\\H025_River_Cruises.spec.js:58:35\n' +
+        '    at D:\\My Projects\\Shearings-Automation-JS\\tests\\Search\\H025_River_Cruises.spec.js:54:5',
+      cause: undefined,
+      matcherResult: [Object]
+    }
+  }
+}

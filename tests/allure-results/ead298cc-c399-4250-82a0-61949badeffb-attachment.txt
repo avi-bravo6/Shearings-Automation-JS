@@ -1,0 +1,35 @@
+Navigated to Home Page
+Clicked on Destinations button
+Clicked on the given xpath
+Navigated to UK, URL verified
+Banner verified
+Header 1 verified
+Header 2 verified
+Header 3 verified
+Header 4 verified
+Side banner verified
+Camera icon verified
+Page title verified
+Page description verified
+Heading verified
+Element 1 verified
+Element 2 verified
+Element 3 verified
+Element 4 verified
+Element 5 verified
+Element 6 verified
+Tab 1 verified
+Tab 2 verified
+Tab 3 verified
+Header verified
+Sorting option verified
+Filter Holidays section verified
+Label 1 verified
+Label 2 verified
+Label 3 verified
+Label 4 verified
+Label 5 verified
+Label 6 verified
+Label 7 verified
+Clear all filters verified
+Holiday card verified

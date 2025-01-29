@@ -1,0 +1,7 @@
+Navigated to Home Page
+Clicked on Useful Info button
+Clicked on given xpath
+Navigated to FAQ page
+Page title verified successfully.
+Bagging Your Holiday section verified successfully.
+Button is not visible

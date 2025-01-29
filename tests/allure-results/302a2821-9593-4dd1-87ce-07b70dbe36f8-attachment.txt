@@ -1,0 +1,5 @@
+✅ Navigated to Home Page
+✅ Clicked on Useful Info button
+✅ Clicked on Automated Payments button
+✅ Navigated to correct page
+✅ Title verified

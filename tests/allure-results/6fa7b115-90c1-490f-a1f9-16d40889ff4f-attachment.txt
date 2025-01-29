@@ -1,0 +1,6 @@
+Navigated to Home Page
+Clicked on Useful Info button
+Clicked on given xpath
+Navigated to Gift Vouchers page
+Page title verified successfully.
+Page content verified successfully.

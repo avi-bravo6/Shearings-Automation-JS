@@ -1,0 +1,4 @@
+Navigated to Shearings homepage
+Navigated to Home Page
+Clicked on Opening Times button
+Opening times content verified successfully
